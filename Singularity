@@ -7,7 +7,7 @@ Author Jason Chow
 Version v0.01
 
 %apprun blender
-exec /opt/blender "$@"
+exec /local/blender "$@"
 
 %post
 apt-get update
@@ -18,6 +18,7 @@ apt-get install -y curl \
   libxi6 \
   libxrender1
 
-mkdir /opt/blender
+mkdir -r /local/blender
 curl -ssL https://mirror.clarkson.edu/blender/release/Blender2.79/blender-2.79b-linux-glibc219-x86_64.tar.bz2 | \
-  tar -jxv --strip-components=1 -C /opt/blender
+  tar -jxv --strip-components=1 -C /local/blender
+chmod -r 777 /local/
