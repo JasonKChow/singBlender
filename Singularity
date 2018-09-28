@@ -14,7 +14,10 @@ apt-get update
 apt-get install -y software-properties-common \
   curl \
   tar \
-  bzip2
+  bzip2 \
+  libglu1 \
+  libxi6 \
+  libxrender1
 
 mkdir ~/blender
 curl -ssL https://mirror.clarkson.edu/blender/release/Blender2.79/blender-2.79b-linux-glibc219-x86_64.tar.bz2 | \
