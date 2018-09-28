@@ -11,8 +11,7 @@ exec /opt/blender "$@"
 
 %post
 apt-get update
-apt-get install -y software-properties-common \
-  curl \
+apt-get install -y curl \
   tar \
   bzip2 \
   libglu1 \
