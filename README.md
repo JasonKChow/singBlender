@@ -2,5 +2,5 @@
 
 To build
 ```
-sudo singularity singBlender.simg singularity
+sudo singularity build singBlender.simg Singularity
 ```
