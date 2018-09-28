@@ -18,7 +18,7 @@ apt-get install -y curl \
   libxi6 \
   libxrender1
 
-mkdir -r /local/blender
+mkdir -p /local/blender
 curl -ssL https://mirror.clarkson.edu/blender/release/Blender2.79/blender-2.79b-linux-glibc219-x86_64.tar.bz2 | \
   tar -jxv --strip-components=1 -C /local/blender
 chmod -r 777 /local/
