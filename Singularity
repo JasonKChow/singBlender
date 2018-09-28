@@ -6,8 +6,8 @@ IncludeCmd: yes
 Author Jason Chow
 Version v0.01
 
-%apprun blender
-exec /local/blender "$@"
+%runscript blender
+exec /local/blender/blender "$@"
 
 %post
 apt-get update
